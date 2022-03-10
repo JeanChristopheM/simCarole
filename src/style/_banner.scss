@@ -1,0 +1,28 @@
+.banner {
+  padding-block: 4rem;
+  min-height: 100vh;
+  background-color: var(--clr-background-peach);
+  text-align: center;
+  color: var(--clr-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  &__content {
+    z-index: 10;
+    margin-top: -5rem;
+    letter-spacing: 0.2rem;
+    .scroll {
+      position: absolute;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      #arrow {
+        @extend h1;
+      }
+    }
+  }
+  &__bgContainer-bg {
+    fill: rgba(250, 128, 114, 0.3);
+  }
+}

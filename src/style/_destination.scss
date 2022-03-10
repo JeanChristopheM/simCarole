@@ -1,0 +1,10 @@
+.destination {
+  background-color: var(--clr-background-sand);
+  color: var(--clr-white);
+  p {
+    padding: 1rem;
+  }
+  &__bgContainer-bg {
+    fill: rgba(255, 192, 203, 0.3);
+  }
+}

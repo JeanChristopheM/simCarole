@@ -1,66 +1,25 @@
 @import "_reset";
+@import "_defaults";
 @import "_vars";
+@import "_header";
+@import "_leaflet";
+// Home Layout
+@import "_banner";
+@import "_quickinfo";
+@import "_destination";
 * {
   font-family: Avenir, Helvetica, Arial, sans-serif;
 }
-.header {
-  background-color: var(--clr-white);
-  position: fixed;
-  width: 100%;
-  z-index: 10;
-  overflow: hidden;
-  //padding-inline: 0.5rem;
-  &__nav {
-    color: var(--clr-black);
-    letter-spacing: 0.3rem;
-    &.desktop {
-      display: none;
-      justify-content: space-between;
-      @media screen and (min-width: 768px) {
-        display: flex;
-      }
-    }
-    &.mobile {
-      @media screen and (min-width: 768px) {
-        display: none;
-      }
-      .mobileMenuBtn {
-        display: block;
-        margin: 0 auto;
-        font-size: 1rem;
-      }
-      .mobileMenu {
-        background-color: var(--clr-white);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        max-height: 0;
-        overflow: hidden;
-        &__linksContainer {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 1rem;
-          a {
-            text-align: center;
-            flex-basis: 100%;
-          }
-        }
-      }
-    }
-    .header__nav__link {
-      padding: 0.5rem 1rem;
-      cursor: pointer;
-      transition: color 0.2s ease;
-      font-size: 0.8rem;
-      font-weight: bold;
-      @media (hover: hover) {
-        &:hover {
-          color: var(--clr-accent-gold);
-        }
-      }
-    }
-  }
-}
 .main {
-  height: 300%;
+  padding-bottom: 5rem;
+}
+
+#map {
+  height: 400px;
+}
+.quickInfo {
+  background-color: var(--clr-white);
+}
+.background-svg {
+  fill: #fa80723d;
 }

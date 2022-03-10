@@ -1,0 +1,25 @@
+.quickInfo {
+  padding: 1rem 2rem 4rem 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  &__item {
+    flex: 1 1 100%;
+    display: flex;
+    flex-direction: column;
+    color: var(--clr-black);
+    img {
+      width: max(100px, 150px);
+      margin: 0 auto -2rem auto;
+    }
+    h2 {
+      color: var(--clr-accent-gold);
+      font-size: 3rem;
+      font-weight: bold;
+      width: max-content;
+      margin: 0 auto;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}

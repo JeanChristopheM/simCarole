@@ -7,6 +7,7 @@ import Home from "./components/Home.vue";
 const routes: {
   [key: string]: JSX.Element;
 } = {
+  //@ts-ignore
   "/": Home,
 };
 
